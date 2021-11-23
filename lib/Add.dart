@@ -19,7 +19,7 @@ class Add extends StatelessWidget{
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 16),
           child: const Text('Enter Customer Information',style: TextStyle(fontSize: 24))
         ),
         Padding(
