@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
 
@@ -12,18 +12,19 @@ class Add extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(""),
+        centerTitle: true,
+        title: Text("QYou"),
       ),
     body: Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 16),
           child: const Text('Enter Customer Information',style: TextStyle(fontSize: 24))
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
           child: TextFormField(
             onChanged: (text) {name = text;}, 
             decoration: const InputDecoration(
@@ -33,7 +34,7 @@ class Add extends StatelessWidget{
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
           child: TextFormField(
             onChanged: (text) {desc = text;}, 
             decoration: const InputDecoration(
